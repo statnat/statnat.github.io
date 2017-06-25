@@ -1,0 +1,9 @@
+name: "cadences"
+output_dir: "."
+navbar:
+  title: "cadences"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Something"
+      href: foo2.html
