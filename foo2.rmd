@@ -1,0 +1,6 @@
+---
+title: "Something fascinating"
+author: "Cadence"
+date: "2017-06-17"
+output: github_document
+---
