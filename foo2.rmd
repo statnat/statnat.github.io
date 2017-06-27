@@ -4,3 +4,8 @@ author: "Cadence"
 date: "2017-06-17"
 output: html_document
 ---
+ 
+
+
+$$Y = \alpha \cdot \cos(2X^5), \alpha = 0,0.1,0.2,...,3$$
+
