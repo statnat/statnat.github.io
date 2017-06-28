@@ -1,28 +1,26 @@
 ---
-title: "home"
+title: "cadence"
 author: "nats"
 date: "June 25, 2017"
 output: html_document
 ---
 
-HELLO, WORLD!
+HELLO, WORLD!    
 
- [StackOverflow](www.stackoverflow.com)
- [Pitt](www.pitt.edu)
+ [StackOverflow](http://www.stackoverflow.com)  
+ [Pitt](http://www.pitt.edu)
 
 **I do intend to place other content on this site eventually.**
 
-hi^"2"
--hello- *or* _maybe_
+$$ hi = maybe^{hello} $$
 
-```{r, echo=FALSE}
-library(readr)
-vars <- read_csv("C:/Users/nat/OneDrive/opioid project/swpa_vars.csv")
-mean(vars[,4])
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
 library(ggplot2)
 library(plotly)
-htmltools::tagList(lapply(1:3, function(x) { plot_ly(x = rnorm(10)) }))
-p <- plot_ly(data = vars, x = vars[,4], y = vars[,7])
-p
+df <- diamonds[sample(1:nrow(diamonds), size = 2000),]
+ 
+plot_ly(df, x = x, y = price, mode = "markers", color = cut, size = z) %>%
+layout(title = "Diamonds")
 
 ```
