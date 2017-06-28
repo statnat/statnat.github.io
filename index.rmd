@@ -7,8 +7,22 @@ output: html_document
 
 HELLO, WORLD!
 
+ [StackOverflow](www.stackoverflow.com)
+ [Pitt](www.pitt.edu)
 
+**I do intend to place other content on this site eventually.**
 
-stuff, stuff, more stuff...
+hi^"2"
+-hello- *or* _maybe_
 
+```{r, echo=FALSE}
+library(readr)
+vars <- read_csv("C:/Users/nat/OneDrive/opioid project/swpa_vars.csv")
+mean(vars[,4])
+library(ggplot2)
+library(plotly)
+htmltools::tagList(lapply(1:3, function(x) { plot_ly(x = rnorm(10)) }))
+p <- plot_ly(data = vars, x = vars[,4], y = vars[,7])
+p
 
+```
