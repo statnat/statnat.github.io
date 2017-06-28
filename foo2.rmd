@@ -7,7 +7,7 @@ output: html_document
 
 
 ``` {r, echo=FALSE}
-n <- 1000
+n <- 1314
 
 h = function(x){4*(1-x^2)^(0.5)}; integrate(h,0,1);
 
