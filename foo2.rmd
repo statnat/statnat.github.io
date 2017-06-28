@@ -17,6 +17,6 @@ esterr=sqrt(cumsum((x-estint)^2))/(1:n); #standard error of Monte Carlo integral
 par(mar=c(4,4,2,2))
 plot(estint, xlab="Mean and error range",type="l",lwd=2,cex.lab=0.5,cex.axis=0.5,
      ylim=mean(x)+20*c(-esterr[n],esterr[n]),ylab="",cex.main=0.5)
-lines(estint+2*esterr,col="gold",lwd=2)
-lines(estint-2*esterr,col="blue")
+lines(estint+2*esterr,col="gold", lwd=1)
+lines(estint-2*esterr,col="blue") 
 ```
